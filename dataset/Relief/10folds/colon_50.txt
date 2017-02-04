@@ -1,0 +1,120 @@
+=== Evaluation result ===
+
+Scheme: IBk
+Options: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation: colon_50
+
+
+Correctly Classified Instances          48               77.4194 %
+Incorrectly Classified Instances        14               22.5806 %
+Kappa statistic                          0.4858
+Mean absolute error                      0.2353
+Root mean squared error                  0.4672
+Relative absolute error                 51.1953 %
+Root relative squared error             97.558  %
+Coverage of cases (0.95 level)          77.4194 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.591    0.125    0.722      0.591    0.650      0.491    0.745     0.603     F
+                 0.875    0.409    0.795      0.875    0.833      0.491    0.745     0.789     T
+Weighted Avg.    0.774    0.308    0.769      0.774    0.768      0.491    0.745     0.723     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  9 |  a = F
+  5 35 |  b = T
+=== Evaluation result ===
+
+Scheme: RandomForest
+Options: -I 100 -K 0 -S 1 -num-slots 1
+Relation: colon_50
+
+
+Correctly Classified Instances          55               88.7097 %
+Incorrectly Classified Instances         7               11.2903 %
+Kappa statistic                          0.7509
+Mean absolute error                      0.2329
+Root mean squared error                  0.3422
+Relative absolute error                 50.6758 %
+Root relative squared error             71.4562 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      86.2903 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.818    0.075    0.857      0.818    0.837      0.751    0.889     0.760     F
+                 0.925    0.182    0.902      0.925    0.914      0.751    0.889     0.942     T
+Weighted Avg.    0.887    0.144    0.886      0.887    0.886      0.751    0.889     0.877     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  4 |  a = F
+  3 37 |  b = T
+=== Evaluation result ===
+
+Scheme: LibSVM
+Options: -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -B -model /Users/Stanley -seed 1
+Relation: colon_50
+
+
+Correctly Classified Instances          49               79.0323 %
+Incorrectly Classified Instances        13               20.9677 %
+Kappa statistic                          0.5174
+Mean absolute error                      0.3076
+Root mean squared error                  0.3965
+Relative absolute error                 66.9318 %
+Root relative squared error             82.7846 %
+Coverage of cases (0.95 level)          98.3871 %
+Mean rel. region size (0.95 level)      96.7742 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.591    0.100    0.765      0.591    0.667      0.527    0.815     0.736     F
+                 0.900    0.409    0.800      0.900    0.847      0.527    0.815     0.846     T
+Weighted Avg.    0.790    0.299    0.787      0.790    0.783      0.527    0.815     0.807     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  9 |  a = F
+  4 36 |  b = T
+=== Evaluation result ===
+
+Scheme: MultilayerPerceptron
+Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation: colon_50
+
+
+Correctly Classified Instances          52               83.871  %
+Incorrectly Classified Instances        10               16.129  %
+Kappa statistic                          0.6404
+Mean absolute error                      0.1736
+Root mean squared error                  0.3879
+Relative absolute error                 37.7822 %
+Root relative squared error             80.9911 %
+Coverage of cases (0.95 level)          87.0968 %
+Mean rel. region size (0.95 level)      57.2581 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.727    0.100    0.800      0.727    0.762      0.642    0.841     0.779     F
+                 0.900    0.273    0.857      0.900    0.878      0.642    0.841     0.861     T
+Weighted Avg.    0.839    0.211    0.837      0.839    0.837      0.642    0.841     0.832     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 16  6 |  a = F
+  4 36 |  b = T

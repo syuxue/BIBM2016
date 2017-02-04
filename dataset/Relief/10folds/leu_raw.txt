@@ -1,0 +1,90 @@
+=== Evaluation result ===
+
+Scheme: IBk
+Options: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation: leukemia_class_rear
+
+
+Correctly Classified Instances          65               90.2778 %
+Incorrectly Classified Instances         7                9.7222 %
+Kappa statistic                          0.7793
+Mean absolute error                      0.1093
+Root mean squared error                  0.3075
+Relative absolute error                 23.9912 %
+Root relative squared error             64.454  %
+Coverage of cases (0.95 level)          90.2778 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances               72     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.800    0.043    0.909      0.800    0.851      0.783    0.883     0.826     F
+                 0.957    0.200    0.900      0.957    0.928      0.783    0.883     0.893     T
+Weighted Avg.    0.903    0.145    0.903      0.903    0.901      0.783    0.883     0.870     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  5 |  a = F
+  2 45 |  b = T
+=== Evaluation result ===
+
+Scheme: RandomForest
+Options: -I 100 -K 0 -S 1 -num-slots 1
+Relation: leukemia_class_rear
+
+
+Correctly Classified Instances          68               94.4444 %
+Incorrectly Classified Instances         4                5.5556 %
+Kappa statistic                          0.8727
+Mean absolute error                      0.2814
+Root mean squared error                  0.314 
+Relative absolute error                 61.7741 %
+Root relative squared error             65.8179 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      98.6111 %
+Total Number of Instances               72     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.840    0.000    1.000      0.840    0.913      0.880    0.991     0.988     F
+                 1.000    0.160    0.922      1.000    0.959      0.880    0.991     0.995     T
+Weighted Avg.    0.944    0.104    0.949      0.944    0.943      0.880    0.991     0.992     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 21  4 |  a = F
+  0 47 |  b = T
+=== Evaluation result ===
+
+Scheme: LibSVM
+Options: -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -B -model /Users/Stanley -seed 1
+Relation: leukemia_class_rear
+
+
+Correctly Classified Instances          71               98.6111 %
+Incorrectly Classified Instances         1                1.3889 %
+Kappa statistic                          0.9691
+Mean absolute error                      0.0696
+Root mean squared error                  0.1426
+Relative absolute error                 15.2874 %
+Root relative squared error             29.8953 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      66.6667 %
+Total Number of Instances               72     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.960    0.000    1.000      0.960    0.980      0.970    0.997     0.994     F
+                 1.000    0.040    0.979      1.000    0.989      0.970    0.997     0.998     T
+Weighted Avg.    0.986    0.026    0.986      0.986    0.986      0.970    0.997     0.997     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 24  1 |  a = F
+  0 47 |  b = T
